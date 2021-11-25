@@ -1,6 +1,7 @@
 # Tic-Tac-Toe
 
 Pseudocode:
+![TicTacToe](https://user-images.githubusercontent.com/87440131/143349773-c046328c-28c6-43e4-99e1-0faff7f0ae05.png)
 
 Sailor Moon's Moon Prism Power Tic Tac Toe
 game needs two players
