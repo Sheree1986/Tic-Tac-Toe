@@ -1,3 +1,55 @@
-body {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: rgb(190, 22, 50);
+    background-image: url(../Image/smb.png);
+    background-repeat: no-repeat;
+  }
+  
+  h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+   
+  }
+  
+  .main-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #gameboard {
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 80px;
+    margin-top: 40px;
+  }
+  
+  .square {
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+  #restart {
+    padding: 10px 20px;
     background-color: black;
+    border: none;
+    border-radius: 20px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
 }
