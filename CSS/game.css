@@ -8,6 +8,8 @@
     color: rgb(190, 22, 50);
     background-image: url(../Image/smb.png);
     background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
   }
   
   h1 {

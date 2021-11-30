@@ -1,34 +1,47 @@
-// document.body.style.backgroundImage = url(../Image/sm.jpeg);
+// document.body.style.backgroundImage = url(../Image/sm.jpeg); attempt to change game piece to image
+
+// setting on for DOM Manipulation 
 const squares = document.querySelectorAll(".square");
 const title= document.getElementById("pageTitle");
 const message = document.getAnimations("gameMessage");
 const restartBtn = document.querySelector('#restart');
+
+
 // new component( "../Image/sm.jpeg";
+// https://www.w3schools.com/graphics/game_images.asp
+
 const spaces = [];
 const playerOne = 'W';
 const playerTwo = 'E';
 let currentPlayer = playerOne;
+// when I started set playTwo to false to prevent O from going first. In StackOverflow  I saw this example
+// the logic was easier to follow. this make "X" make the first move
 
+//setting up the game board and styling 
 const drawBoard = () => {
+
+  // this runs the above callback function for each of the squares array
   squares.forEach((square, i) => {
-    let styling= '';
+    let styling= ''
     if (i < 3) {
-      styling += 'border-bottom: 3px solid red;';
+      styling += 'border-bottom: 10px solid red;';
     }
     if (i % 3 === 0) {
-      styling += 'border-right: 3px solid red;';
+      styling += 'border-right: 10px solid red;';
     }
     if (i % 3 === 2) {
-      styling += 'border-left: 3px solid red;';
+      styling += 'border-left: 10px solid red;';
     }
     if (i > 5) {
-      styling += 'border-top: 3px solid red;';
+      styling += 'border-top: 10px solid red;';
     }
     square.style = styling;
     square.addEventListener('click', boxClicked);
+    //listening for click event on one for any square 
   });
 };
 
+// function sets up if 
 const boxClicked = (e) => {
 e.preventDefault();
   const id = e.target.id;
