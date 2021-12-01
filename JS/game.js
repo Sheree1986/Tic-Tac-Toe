@@ -1,14 +1,21 @@
+/* Resources/Research 
+https://www.youtube.com/watch?v=S3qHB9mJ2zA
+https://www.codebrainer.com/blog/tic-tac-toe-javascript-game
+https://www.studytonight.com/post/building-a-tic-tac-toe-game-in-javascript
+recommended using the defer keyword for the javascript to load after the HTML
+*/
+// new component( "../Image/sm.jpeg";
+// https://www.w3schools.com/graphics/game_images.asp
 // document.body.style.backgroundImage = url(../Image/sm.jpeg); attempt to change game piece to image
+
 
 // setting on for DOM Manipulation 
 const squares = document.querySelectorAll(".square");
 const title= document.getElementById("pageTitle");
-const message = document.getAnimations("gameMessage");
+const message = document.getElementById("gameMessage");
 const restartBtn = document.querySelector('#restart');
 
 
-// new component( "../Image/sm.jpeg";
-// https://www.w3schools.com/graphics/game_images.asp
 
 const spaces = [];
 const playerOne = 'X';
@@ -17,98 +24,115 @@ let currentPlayer = playerOne;
 // when I started set playTwo to false to prevent O from going first. In StackOverflow  I saw this example
 // the logic was easier to follow. this make "X" make the first move
 
-//setting up the game board and styling 
-const drawBoard = () => {
+//setting up the gameboard and styling. empty function to set up the boarders/canvas.
+const gameBoard = () => {
 
-  // this runs the above callback function for each of the squares array
+  // this runs the above callback function for each of the squares array.
+  // running the for each is looping through the styling array and replacing
+  // current value with new value 
   squares.forEach((square, i) => {
     let styling= ''
+    // if it is less than three a bottom board is add.
     if (i < 3) {
       styling += 'border-bottom: 10px solid red;';
     }
+    // if it can be divided by three and has zero remaining a right border is add
     if (i % 3 === 0) {
       styling += 'border-right: 10px solid red;';
     }
+    // if there is two remaining a left border is add (example 2, 5 and 8)
     if (i % 3 === 2) {
       styling += 'border-left: 10px solid red;';
     }
+
+    // anything above 5 it adds a top border
     if (i > 5) {
       styling += 'border-top: 10px solid red;';
     }
     square.style = styling;
-    square.addEventListener('click', boxClicked);
-    //listening for click event on one for any square 
+    square.addEventListener('click', squareClickEvent);
+    //listening for click event for any square 
   });
 };
 
-// function sets up if 
-const boxClicked = (e) => {
-e.preventDefault();
-  const id = e.target.id;
-  console.log(e);
-  if (!spaces[id]) {
-    console.log(spaces[id]);
-    spaces[id] = currentPlayer;
+// function sets up to target the div id 0-8
+const squareClickEvent = (e) => {
+  // 
+  const turn = e.target.id;
+  //this check if the square is empty
+  if (!spaces[turn]) {
+    spaces[turn] = currentPlayer;
     e.target.innerText = currentPlayer;
-
-    if (playerWon()) {
+//  with this if statement the inner HTML text is changed based
+// on which condition is met
+    if (winner()) {
       title.innerText = `${currentPlayer} is the winner!!!`;
       restart();
+      //Reminder break loop ** stop looping forever
       return;
     }
 
-    if (playerDraw()) {
+    if (draw()) {
       return;
     }
-    currentPlayer = currentPlayer === playerOne ? playerTwo: playerOne;
+    // change the values for currentPlayer based on who turn is is
+    currentPlayer = currentPlayer === playerOne ? playerTwo : playerOne;
   }
 };
-
-const playerWon = () => {
+// this could be accomplished by follow 
+// https://www.codebrainer.com/blog/tic-tac-toe-javascript-game
+// wanted to follow the gladiator game logic
+// this cycle through the combination of three in a row to determine
+//if playerOne or PlayTwo won
+const winner = () => {
   if (spaces[0] === currentPlayer) {
     if (spaces[1] === currentPlayer && spaces[2] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins up to top`;
+      message.innerText = `${currentPlayer} wins`;
       return true;
     }
     if (spaces[3] === currentPlayer && spaces[6] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins on the left`;
+      message.innerText = `${currentPlayer} wins`;
       return true;
     }
     if (spaces[4] === currentPlayer && spaces[8] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins diagonally`;
+      message.innerText = `${currentPlayer} wins`;
       return true;
     }
   }
   if (spaces[8] === currentPlayer) {
     if (spaces[2] === currentPlayer && spaces[5] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins on the right`;
+      message.innerText = `${currentPlayer} wins`;
       return true;
     }
     if (spaces[6] === currentPlayer && spaces[7] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins on the bottom`;
+      message.innerText = `${currentPlayer} wins`;
       return true;
     }
   }
   if (spaces[4] === currentPlayer) {
     if (spaces[1] === currentPlayer && spaces[7] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins vertically on middle`;
+      message.innerText = `${currentPlayer} wins`;
       return true;
     }
     if (spaces[3] === currentPlayer && spaces[5] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins horizontally on the middle`;
+      message.innerText = `${currentPlayer} wins`;
       return true;
     }
     if (spaces[2] === currentPlayer && spaces[6] === currentPlayer) {
-     message.innerText = `${currentPlayer} wins diagonally`;
+     message.innerText = `${currentPlayer} wins`;
       return true;
     }
   }
 };
 
-const playerDraw = () => {
-  let draw = 0;
+// if one of the condition above is true the player wins.
+// if not it is a draw, or It's a me, Mario
+
+const draw = () => {
+  let itsamedraw = 0;
   spaces.forEach((space, i) => {
-    if (spaces[i] !== null) draw++;
+    if (spaces[i] !== null) itsamedraw++;
+    // no more space left
   });
   if (draw === 9) {
     text.innerText = `Draw`;
@@ -130,4 +154,4 @@ const restart = () => {
 };
 restartBtn.addEventListener('click', restart);
 restart();
-drawBoard();
+gameBoard();

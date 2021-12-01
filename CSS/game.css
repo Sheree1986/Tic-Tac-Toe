@@ -1,9 +1,11 @@
-  * {
+/* reset page to 0 margins  */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+  /* Using a background image instead of color. In order to make
+  it mobile responsive I selected no repeat and to contain to content*/
   body {
     color: rgb(190, 22, 50);
     background-image: url(../Image/smb.png);
@@ -26,7 +28,7 @@
     align-items: center;
     flex-direction: column;
   }
-  
+  /*Setting the board up to display only three boxes in the row*/
   #gameboard {
     width: 60vw;
     display: flex;
@@ -34,7 +36,7 @@
     font-size: 80px;
     margin-top: 40px;
   }
-  
+  /* The squares inside the game board*/
   .square {
     height: 20vh;
     width: 20vw;
@@ -43,7 +45,7 @@
     align-items: center;
     color: blue;
   }
-  
+  /* restart button */
   #restart {
     padding: 10px 20px;
     background-color: black;
@@ -55,3 +57,4 @@
     cursor: pointer;
     text-transform: uppercase;
 }
+
