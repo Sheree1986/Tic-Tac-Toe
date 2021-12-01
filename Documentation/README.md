@@ -1,14 +1,17 @@
-<strong>Sailor Moon's Moon Prism Power Tic Tac Toe</strong>
+                          <strong>Sailor Moon's Moon Prism Power Tic Tac Toe</strong>
+
+                                    https://sheree1986.github.io/Tic-Tac-Toe/
+                                    
+                                    
 <img width="1200" alt="gamess" src="https://user-images.githubusercontent.com/87440131/144290762-ed34b646-55ff-4174-81f3-7fd40549ad98.png">
 
-https://sheree1986.github.io/Tic-Tac-Toe/
+                                    
 
 ![TicTacToe](https://user-images.githubusercontent.com/87440131/143349773-c046328c-28c6-43e4-99e1-0faff7f0ae05.png)
 
-<strong>Pseudocode:</strong>
+                                             <strong>Pseudocode:</strong>
 
 
-<strong>Sailor Moon's Moon Prism Power Tic Tac Toe</strong>
 
 
 game needs two players
@@ -26,24 +29,24 @@ Wasted a lot of time trying to do an if else statement for winner function. Didn
 <strong>Technical Requirements - Per GA</strong>
 Your Tic Tac Toe app must:
 
-Render a game board in the browser - Completed 
+Render a game board in the browser 
 Switch turns between X and O (or whichever markers you select) (working on sailor moon icon or images)
-Visually display which side won if a player gets three in a row, or show a draw if neither player wins - Completed
-Include separate HTML / CSS / JavaScript files - Completed 
-Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles - Working on
-Use JavaScript for DOM manipulation - Completed 
-Deploy your game online, where the rest of the world can access it - Completed 
-You can use GitHub Pages for deploying your project - Completed
-Use semantic markup for HTML and CSS (adhere to best practices) - Completed
-Have well-formatted, and well-commented code - Working on 
+Visually display which side won if a player gets three in a row, or show a draw if neither player wins 
+Include separate HTML / CSS / JavaScript files
+Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles
+Use JavaScript for DOM manipulation
+Deploy your game online, where the rest of the world can access it
+You can use GitHub Pages for deploying your project
+Use semantic markup for HTML and CSS (adhere to best practices)
+Have well-formatted, and well-commented code
 
-<strong>User Stories</strong> Completed 
+<strong>User Stories</strong>
 
 1) As a user, I should be able to start a new tic tac toe game 
 
 2) As a user, I should be able to click on a square to add X first and then O, and so on
 
-3) As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next
+3) As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next (didn't complete who's turn is it)
 
 4) As a user, I should not be able to click the same square twice
 
@@ -54,7 +57,7 @@ Have well-formatted, and well-commented code - Working on
 7) As a user, I should be able to play the game again without refreshing the page
 
 <strong>Potential Extra Tic Tac Toe Features</strong>
-Working On 
+
 Keep track of multiple game rounds with a win, lose and tie counter
 Allow players to customize their tokens (X, O, name, picture, etc)
 Use localStorage to persist data locally to allow games to continue after page refresh or loss of internet connectivity
@@ -78,7 +81,7 @@ Describe how some of your favorite functions work
 👉 Submit Issue Here
 
 
-Necessary Deliverables - Completed 
+Necessary Deliverables
 
 A working game, built by you, hosted somewhere on the internet
 A link to your hosted working game in the URL section of your Github repository
