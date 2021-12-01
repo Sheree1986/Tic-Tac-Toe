@@ -101,7 +101,9 @@ https://www.studytonight.com/post/building-a-tic-tac-toe-game-in-javascript
 
 recommended using the defer keyword for the javascript to load after the HTML
 
-         attempt to change game piece to image
+             attempt to change game piece to image
+
+
 new component( "../Image/sm.jpeg";
 https://www.w3schools.com/graphics/game_images.asp
 document.body.style.backgroundImage = url(../Image/sm.jpeg); 
