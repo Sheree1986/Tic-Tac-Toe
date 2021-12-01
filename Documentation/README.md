@@ -19,6 +19,9 @@ Once game square piece is occupied another piece can't enter the space
 turns continues until either player get three in a row and wins (if/else or switch statement)
 game equals draw if no player get three in a row
 
+<strong>Hardest Part</strong>
+Wasted a lot of time trying to do an if else statement for winner function. Didn't know you could you if repeatedly if all statements are true. 
+
 <strong>Technical Requirements - Per GA</strong>
 Your Tic Tac Toe app must:
 
@@ -82,3 +85,20 @@ A git repository hosted on Github, with a link to your hosted game, and frequent
 A README.md file, including
 Explanations of the technologies used, the approach taken, installation instructions, unsolved problems, etc.
 Follow this mini-lesson on writing documentation for your project
+
+
+<strong>Resources/Research</strong>
+
+https://www.youtube.com/watch?v=S3qHB9mJ2zA
+
+https://www.codebrainer.com/blog/tic-tac-toe-javascript-game
+
+https://www.studytonight.com/post/building-a-tic-tac-toe-game-in-javascript
+
+recommended using the defer keyword for the javascript to load after the HTML
+
+         attempt to change game piece to image
+new component( "../Image/sm.jpeg";
+https://www.w3schools.com/graphics/game_images.asp
+document.body.style.backgroundImage = url(../Image/sm.jpeg); 
+

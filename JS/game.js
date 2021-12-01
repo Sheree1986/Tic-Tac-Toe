@@ -67,7 +67,7 @@ const squareClickEvent = (e) => {
 // on which condition is met
     if (winner()) {
       title.innerText = `${currentPlayer} is the winner!!!`;
-      restart();
+ 
       //Reminder break loop ** stop looping forever
       return;
     }
@@ -84,6 +84,7 @@ const squareClickEvent = (e) => {
 // wanted to follow the gladiator game logic
 // this cycle through the combination of three in a row to determine
 //if playerOne or PlayTwo won
+
 const winner = () => {
   if (spaces[0] === currentPlayer) {
     if (spaces[1] === currentPlayer && spaces[2] === currentPlayer) {
@@ -122,13 +123,8 @@ const winner = () => {
      message.innerText = `${currentPlayer} wins`;
       return true;
     }
-  }
-};
 
-// if one of the condition above is true the player wins.
-// if not it is a draw, or It's a me, Mario
-
-const draw = () => {
+else { draw = () => {
   let itsamedraw = 0;
   spaces.forEach((space, i) => {
     if (spaces[i] !== null) itsamedraw++;
@@ -136,8 +132,8 @@ const draw = () => {
   });
   if (itsamedraw === 9) {
     title.innerText = `Draw`;
-    restart();
-  }
+
+  }}}}
 };
 
 const restart = () => {
