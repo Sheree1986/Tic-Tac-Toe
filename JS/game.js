@@ -134,13 +134,14 @@ const draw = () => {
     if (spaces[i] !== null) itsamedraw++;
     // no more space left
   });
-  if (draw === 9) {
-    text.innerText = `Draw`;
+  if (itsamedraw === 9) {
+    title.innerText = `Draw`;
     restart();
   }
 };
 
 const restart = () => {
+  // method to delay 1000 millisecond
   setTimeout(() => {
     spaces.forEach((space, i) => {
       spaces[i] = null;
@@ -148,7 +149,7 @@ const restart = () => {
     squares.forEach((square) => {
       square.innerText = '';
     });
-    title.innerText = `Play`;
+    title.innerText = `Moon Prism Power!`;
     message.innerText = ``;
   }, 1000);
 };
