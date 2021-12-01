@@ -21,7 +21,7 @@ turns continues until either player get three in a row and wins (if/else or swit
 game equals draw if no player get three in a row
 
 <strong>Hardest Part</strong>
-Wasted a lot of time trying to do an if else statement for winner function. Didn't know you could you if repeatedly if all statements are true. 
+Wasted a lot of time trying to do an if else statement for winner function. Didn't know you could you if repeatedly if all statements are true. There are two issues that will need to be fix in future iterations. One a glitch that places playerOne (O) on the gameboard for a few seconds. second the message to inform the user whose turn it is. For this I used forEach and if else statments. I tried to based the format of this on how we structure the Gladiator game. Lastly I would like to get the logical down behind how to add pictures as a game piece.
 
 <strong>Technical Requirements - Per GA</strong>
 Your Tic Tac Toe app must:
