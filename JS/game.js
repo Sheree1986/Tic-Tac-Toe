@@ -1,13 +1,3 @@
-/* Resources/Research 
-https://www.youtube.com/watch?v=S3qHB9mJ2zA
-https://www.codebrainer.com/blog/tic-tac-toe-javascript-game
-https://www.studytonight.com/post/building-a-tic-tac-toe-game-in-javascript
-recommended using the defer keyword for the javascript to load after the HTML
-*/
-// new component( "../Image/sm.jpeg";
-// https://www.w3schools.com/graphics/game_images.asp
-// document.body.style.backgroundImage = url(../Image/sm.jpeg); attempt to change game piece to image
-
 
 // setting on for DOM Manipulation 
 const squares = document.querySelectorAll(".square");
@@ -88,39 +78,31 @@ const squareClickEvent = (e) => {
 const winner = () => {
   if (spaces[0] === currentPlayer) {
     if (spaces[1] === currentPlayer && spaces[2] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins`;
       return true;
     }
     if (spaces[3] === currentPlayer && spaces[6] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins`;
       return true;
     }
     if (spaces[4] === currentPlayer && spaces[8] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins`;
       return true;
     }
   }
   if (spaces[8] === currentPlayer) {
     if (spaces[2] === currentPlayer && spaces[5] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins`;
       return true;
     }
     if (spaces[6] === currentPlayer && spaces[7] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins`;
       return true;
     }
   }
   if (spaces[4] === currentPlayer) {
     if (spaces[1] === currentPlayer && spaces[7] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins`;
       return true;
     }
     if (spaces[3] === currentPlayer && spaces[5] === currentPlayer) {
-      message.innerText = `${currentPlayer} wins`;
       return true;
     }
     if (spaces[2] === currentPlayer && spaces[6] === currentPlayer) {
-     message.innerText = `${currentPlayer} wins`;
       return true;
     }
 
