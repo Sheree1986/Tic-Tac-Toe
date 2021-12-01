@@ -11,8 +11,8 @@ const restartBtn = document.querySelector('#restart');
 // https://www.w3schools.com/graphics/game_images.asp
 
 const spaces = [];
-const playerOne = 'W';
-const playerTwo = 'E';
+const playerOne = 'X';
+const playerTwo = 'O';
 let currentPlayer = playerOne;
 // when I started set playTwo to false to prevent O from going first. In StackOverflow  I saw this example
 // the logic was easier to follow. this make "X" make the first move

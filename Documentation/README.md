@@ -1,13 +1,13 @@
-Sailor Moon's Moon Prism Power Tic Tac Toe
+<strong>Sailor Moon's Moon Prism Power Tic Tac Toe</strong>
 
 
 
 ![TicTacToe](https://user-images.githubusercontent.com/87440131/143349773-c046328c-28c6-43e4-99e1-0faff7f0ae05.png)
 
-Pseudocode:
+<strong>Pseudocode:</strong>
 
 
-Sailor Moon's Moon Prism Power Tic Tac Toe
+<strong>Sailor Moon's Moon Prism Power Tic Tac Toe</strong>
 
 
 game needs two players
@@ -19,11 +19,11 @@ Once game square piece is occupied another piece can't enter the space
 turns continues until either player get three in a row and wins (if/else or switch statement)
 game equals draw if no player get three in a row
 
-Technical Requirements - Per GA
+<strong>Technical Requirements - Per GA</strong>
 Your Tic Tac Toe app must:
 
 Render a game board in the browser - Completed 
-Switch turns between X and O (or whichever markers you select) (working on salior moon icon or images)
+Switch turns between X and O (or whichever markers you select) (working on sailor moon icon or images)
 Visually display which side won if a player gets three in a row, or show a draw if neither player wins - Completed
 Include separate HTML / CSS / JavaScript files - Completed 
 Stick with KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles - Working on
@@ -34,15 +34,23 @@ Use semantic markup for HTML and CSS (adhere to best practices) - Completed
 Have well-formatted, and well-commented code - Working on 
 
 <strong>User Stories</strong> Completed 
-As a user, I should be able to start a new tic tac toe game 
-As a user, I should be able to click on a square to add X first and then O, and so on
-As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next
-As a user, I should not be able to click the same square twice
-As a user, I should be shown a message when I win, lose or tie
-As a user, I should not be able to continue playing once I win, lose, or tie
-As a user, I should be able to play the game again without refreshing the page
 
-Potential Extra Tic Tac Toe Features - Working On 
+1) As a user, I should be able to start a new tic tac toe game 
+
+2) As a user, I should be able to click on a square to add X first and then O, and so on
+
+3) As a user, I should be shown a message after each turn for if I win, lose, tie or who's turn it is next
+
+4) As a user, I should not be able to click the same square twice
+
+5) As a user, I should be shown a message when I win, lose or tie
+
+6) As a user, I should not be able to continue playing once I win, lose, or tie
+
+7) As a user, I should be able to play the game again without refreshing the page
+
+<strong>Potential Extra Tic Tac Toe Features</strong>
+Working On 
 Keep track of multiple game rounds with a win, lose and tie counter
 Allow players to customize their tokens (X, O, name, picture, etc)
 Use localStorage to persist data locally to allow games to continue after page refresh or loss of internet connectivity
