@@ -1,4 +1,4 @@
-                          <strong>Sailor Moon's Moon Prism Power Tic Tac Toe</strong>
+                                      Sailor Moon's Moon Prism Power Tic Tac Toe
 
                                     https://sheree1986.github.io/Tic-Tac-Toe/
                                     
@@ -9,7 +9,7 @@
 
 ![TicTacToe](https://user-images.githubusercontent.com/87440131/143349773-c046328c-28c6-43e4-99e1-0faff7f0ae05.png)
 
-                                             <strong>Pseudocode:</strong>
+                                                  Pseudocode:
 
 
 
